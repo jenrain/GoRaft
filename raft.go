@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-// Raft 节点类型
+// Raft 节点
 type Raft struct {
 	node *NodeInfo
 	// 获得的投票数
@@ -37,13 +37,13 @@ type Raft struct {
 	heartBeat chan bool
 }
 
-// NodeInfo 节点信息类型
+// NodeInfo 节点信息
 type NodeInfo struct {
 	ID   string
 	Port string
 }
 
-// Message 消息类型
+// Message 消息
 type Message struct {
 	Msg   string
 	MsgID int
